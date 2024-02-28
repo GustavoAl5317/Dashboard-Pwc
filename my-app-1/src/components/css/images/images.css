@@ -1,0 +1,32 @@
+/* Estilos padrão para .img */
+.img {
+    width: 100%;
+    max-height: 115px; /* Defina uma altura máxima para evitar que a imagem fique muito grande em telas grandes */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.829);
+}
+
+/* Estilos para .img-som */
+.img-som {
+    display: flex;
+    justify-content: right;
+}
+
+/* Adiciona responsividade para telas menores */
+@media screen and (max-width: 600px) {
+    .img {
+        height: auto; /* Tornar a altura automática para ajustar proporcionalmente à largura */
+        max-height: none; /* Remover a altura máxima em telas menores */
+    }
+
+    /* Ajuste a posição da imagem para telas menores, se necessário */
+    .img-som {
+        justify-content: center; /* Centralizar a imagem em telas menores */
+    }
+}
+
+/* Adiciona responsividade para telas maiores */
+@media screen and (min-width: 1200px) {
+    .img {
+        max-height: 150px; /* Defina uma altura máxima maior para telas maiores */
+    }
+}

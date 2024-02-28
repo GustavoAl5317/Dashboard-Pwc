@@ -1,0 +1,10 @@
+.box-title {
+    border: 2px solid black;
+    margin-top: 0.2%;
+    text-align: center;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 30px;
+}

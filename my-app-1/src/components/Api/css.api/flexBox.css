@@ -1,0 +1,73 @@
+/* Estilos padrão para .boxContainer */
+.boxContainer {
+  max-height: 800px; /* Ajuste a altura máxima conforme necessário */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2%px;
+  width: 98%;
+  height: 10%;
+  margin-left: 1%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-top: 1%;
+  border: 1px solid rgba(0, 0, 0, 0.575);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+/* Estilos para .labelValueContainer */
+.labelValueContainer {
+  flex: 1;
+  margin-bottom: 5px;
+  padding: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.406);
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(217, 217, 217);
+}
+
+/* Estilos para .labelBox */
+.labelBox {
+  font-weight: bold;
+  background: linear-gradient();
+  border-radius: 3px;
+  background-color: #202020e1;
+  color: white;
+}
+
+/* Estilos para .valueBox */
+.valueBox {
+  margin-top: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.296);
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  align-items: center;
+  border-radius: 5px;
+  height: 60px;
+  color: #d85604;
+  font-weight: 600;
+  background-color: rgb(253, 216, 180);
+}
+
+/* Adiciona responsividade para telas menores */
+@media (max-width: 768px) {
+  .boxContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .labelValueContainer {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .labelBox {
+    font-size: 16px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  .valueBox {
+    font-size: 24px;
+    height: 40px;
+  }
+}
